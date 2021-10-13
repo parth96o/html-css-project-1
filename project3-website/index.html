@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website - by Manish kumar</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/2f1c4a31ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="./eduford_img/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="nav-links">
+          <i class="fas fa-times-circle" onclick="HideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT </a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="ShowMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Delhi Technological University</h1>
+
+        <p>
+          India's leading university in Reseach and Technology Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Omnis aliquid est,
+          pariatur, molestias quis assumenda doloremque quae, eos aspernatur
+          occusamus ullam corrupti magnam Lorem ipsum dolor sit amet consectetu
+          excepturi sit eius fugiat labore? Facilis illo consectetur deleniti
+          cum quas vitae beatae? Consequatur accusamus quidem consectetur!
+        </p>
+
+        <a href="" class="hero-btn">Know More</a>
+      </div>
+    </section>
+    <script>
+      var navlinks = document.getElementById("nav-links");
+      function ShowMenu() {
+        navlinks.style.right = "0";
+      }
+      function HideMenu() {
+        navlinks.style.right = "-400px";
+      }
+    </script>
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus
+        numquam sit quidem aspernatur delectus?
+      </p>
+      <div class="row">
+        <div class="col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil
+            explicabo ducimus dicta dignissimos assumenda porro nisi ut dolorum
+            veniam.
+          </p>
+        </div>
+
+        <div class="col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil
+            explicabo ducimus dicta dignissimos assumenda porro nisi ut dolorum
+            veniam.
+          </p>
+        </div>
+
+        <div class="col">
+          <h3>Graduate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nihil
+            explicabo ducimus dicta dignissimos assumenda porro nisi ut dolorum
+            veniam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- campus -->
+    <section class="campus">
+      <h1>our global campus</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus
+        minima, amet quo blanditiis sint laudantium, nisi officiis accusantium
+        mollitia eaque totam! Labore, sint dolores amet nam voluptatem deleniti
+        saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+        harum tempora accusantium fuga odio, quisquam asperiores illum!
+        Accusantium quaerat neque, ipsum dolor, expedita consequuntur eligendi
+        quasi nemo ab, non fugit!
+      </p>
+      <div class="campus-row">
+        <div class="campus-col">
+          <img src="./eduford_img/london.png" alt="" />
+          <div class="img-head"><h3>NEW DELHI</h3></div>
+          <!-- <div class="layer"></div> -->
+        </div>
+        <div class="campus-col">
+          <img src="./eduford_img/newyork.png" alt="" />
+          <div class="img-head"><h3>WASHINGTON</h3></div>
+        </div>
+        <div class="campus-col">
+          <img src="./eduford_img/washington.png" alt="" />
+          <div class="img-head"></divclass>
+            <h3>SINGAPORE</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- facilities -->
+    <section class="facilities">
+      
+      <h1>Our Facilities</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium amet possimus, corrupti tenetur illo repudiandae, quisquam voluptate illum ex molestiae enim tempore corporis quae.</p>
+      <div class="row">
+        <div class="fac-col"><img src="./eduford_img/library.png" alt="">
+        <h3>World Class Library</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolor pariatur rem corporis</p>
+        </div>
+        <div class="fac-col"><img src="./eduford_img/cafeteria.png" alt="">
+        <h3>cafeteria</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore, possimus eius similique consequatur nobis?</p>
+        </div>
+        <div class="fac-col"><img src="./eduford_img/basketball.png" alt="">
+        <h3>Basketball</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quibusdam molestias, saepe tempore quisquam necessitatibus!</p>
+        </div>
+      </div> 
+      </section>
+      <!-- REVIEWS -->
+      <section class="review">
+        <h1>what our student say</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Im kire</p>
+        <div class="row">
+          <div class="review-col">
+            
+            <img src="./eduford_img/user1.jpg" alt="">
+            <div>
+              <h1>Erica jasmine</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dicta consequuntur excepturi natus adipisci ipsum!</p>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="review-col">
+            <img src="./eduford_img/user2.jpg" alt="">
+            <div>
+              <h1>Raju Rastogi</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dicta consequuntur excepturi natus adipisci ipsum!</p>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  </body>
+</html>

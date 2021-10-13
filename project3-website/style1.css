@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./eduford_img/1519797201497.jpeg) center/cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 8px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: rgb(255, 136, 92);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+/* right after hoverng width will become from 0 to 100 */
+.nav-links ul li:hover::after {
+  width: 100%;
+  background: orangered;
+}
+.text-box {
+  width: 95%;
+  color: #ffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 58px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 15px 30px;
+  font-weight: 900;
+  color: white;
+
+  line-height: 6.5mm;
+  color: white;
+}
+.text-box p {
+  line-height: 9mm;
+  color: white;
+  font-size: 1rem;
+}
+.hero-btn {
+  display: inline-block;
+  position: relative;
+  top: 30px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: #ffff;
+  padding: 15px 30px;
+  background: transparent;
+  transition: 0.5s;
+}
+.hero-btn:hover {
+  border: 1px solid orangered;
+  background: rgb(255, 68, 0);
+}
+/* image classee is weird, why dot is only before fas ? why not before nav? */
+nav .fas {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+  .text-box {
+    font-size: 15px;
+  }
+  .hero-btn {
+    font-size: 12px;
+  }
+  .nav-links ul li {
+    display: block;
+    margin: 0px;
+
+    padding: 13px;
+    text-decoration: underline;
+    transition: 1.4s;
+  }
+  .nav-links ul li::after {
+    background: orange;
+  }
+
+  .nav-links {
+    display: block;
+    background: linear-gradient(
+      -45deg,
+      hsla(212, 67%, 36%, 0.4) 0%,
+      hsla(207, 69%, 51%, 0.46) 0%,
+      hsla(171, 88%, 56%, 0.69) 0%,
+      hsla(207, 69%, 51%, 0.92) 0%,
+      rgba(255, 81, 13, 0.938) 100%
+    );
+
+    position: absolute;
+    width: 40%;
+    right: 0%;
+    height: 100vh;
+    z-index: 3;
+    top: 0px;
+    text-align: left;
+    transition: 0.5s;
+  }
+
+  nav .fas {
+    display: block;
+    color: white;
+    margin: 15px;
+    font-size: 20px;
+  }
+  .nav-links ul li:hover::after {
+    width: 0;
+  }
+}
+/* course */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.course h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.course p {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.col {
+  box-sizing: border-box;
+  flex-basis: 30%;
+  padding: 20px 12px;
+  background: #fde1d1;
+  border-radius: 15px;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+}
+.col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.541);
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    margin-top: 20px;
+  }
+}
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+p {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.campus-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.campus-col {
+  display: flex;
+
+  justify-content: space-between;
+  position: relative;
+  flex-basis: 32%;
+  padding: 0%;
+  margin: 30px 25px;
+}
+.campus-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.541);
+  border-radius: 16px;
+  bottom: 10px;
+}
+.campus-col img {
+  border-radius: 16px;
+}
+/* .layer {
+  position: absolute;
+  background: chartreuse;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+} */
+.img-head {
+  position: absolute;
+  left: 37%;
+
+  transform: translateX(-10%);
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  transition: 1s;
+}
+
+@media (max-width: 700px) {
+  .campus-row {
+    flex-direction: column;
+  }
+}
+/* facilities */
+.facilities {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+}
+.facilities h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.facilities p {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.fac-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 80%;
+}
+.fac-col {
+  box-sizing: border-box;
+  flex-basis: 30%;
+  padding: 20px 12px;
+  display: block;
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+}
+.fac-col img {
+  width: 100%;
+  border-radius: 12px;
+}
+/* riview */
+.review {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+}
+.review-col {
+  padding: 10px 10px;
+  border-radius: 12px;
+  flex-basis: 40%;
+  /* important point-->flex-basis it kinda makes different sized image of same Wxh */
+  background: #fde1d1;
+  cursor: pointer;
+  margin: 10px 10px;
+  text-align: left;
+  display: flex;
+  width: 80%;
+}
+.review-col img {
+  margin: 10px;
+  margin-top: 15px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+  /* reducing heigh only by pixels to have a matching wxd and then rounding off edges to get a fake circle around img */
+  height: 190px;
+}
+.review-col h1 {
+  padding: 19px;
+}
